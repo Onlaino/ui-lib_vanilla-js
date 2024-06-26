@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Library</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>123</div>
-    <div class='active'>123</div>
-    <div class='findme'>
-        <div class="some">ss</div>
-        <div class="some">sss</div>
-        <div class="more">m</div>
-        <div class="some">ssss</div>
-        <div class="more">mm</div>
-    </div>    
-    <button>Click me</button>
-    <script src='script.js'></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Library</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="container">
+			<button class="btn btn-primary m20" id="first">
+				fade out first text
+			</button>
+			<button class="btn btn-dark m20" data-count="second">
+				fade out second text
+			</button>
+			<button class="btn btn-warning m20">fade out all text</button>
+
+			<!-- dropdown menu -->
+			<div class="dropdown">
+				<button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">
+					Dropdowm Button
+				</button>
+				<div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+					<a href="#" class="dropdown-item">#</a>
+					<a href="#" class="dropdown-item"># </a>
+					<a href="#" class="dropdown-item">#</a>
+				</div>
+			</div>
+
+			<div class="goods d-flex f-space-around">
+				<div class="card">
+					<img
+						class="card-img"
+						src="https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=600&quality=80"
+						alt="photo"
+					/>
+					<div class="card-body">
+						<div class="card-title">Card Title</div>
+						<p class="card-text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit
+						</p>
+						<a
+							href="#"
+							class="btn btn-primary"
+							data-toggle="modal"
+							data-target="#exampleModal"
+							>Link to</a
+						>
+					</div>
+				</div>
+
+				<div class="card">
+					<img
+						class="card-img"
+						src="https://i0.wp.com/picjumbo.com/wp-content/uploads/camping-on-top-of-the-mountain-during-sunset-free-photo.jpg?w=600&quality=80"
+						alt="photo"
+					/>
+					<div class="card-body">
+						<div class="card-title">Card Title 2</div>
+						<p class="card-text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit
+						</p>
+						<a href="#" class="btn btn-primary">Link to</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modal -->
+
+			<div class="modal" id="exampleModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<button class="close" data-close>
+							<span>&times;</span>
+						</button>
+						<div class="modal-header">
+							<div class="modal-title">Modal Title</div>
+						</div>
+						<div class="modal-body">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+							omnis? Deleniti, eaque, inventore vero nihil beatae illo mollitia
+							quos a omnis quisquam sequi, deserunt nesciunt in odio est porro.
+							Ea!
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger" data-close>Close</button>
+							<button class="btn btn-success">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
 </html>
