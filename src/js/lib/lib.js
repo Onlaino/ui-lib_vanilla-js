@@ -8,11 +8,9 @@ import './modules/attributes';
 import './modules/actions';
 import './modules/effects';
 
-
 //components
 import './components/dropdown.js';
-import './components/modal.js'
-
-
+import './components/modal.js';
+import './components/tabs.js';
 
 export default $;
