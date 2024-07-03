@@ -12,5 +12,6 @@ import './modules/effects';
 import './components/dropdown.js';
 import './components/modal.js';
 import './components/tabs.js';
+import './components/accordion.js';
 
 export default $;
